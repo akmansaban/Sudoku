@@ -1,0 +1,47 @@
+	Bu program, tabloya sayýlarý öyle yerleþtirir ki; her satýrda, her sütunda ve her kare grupta 1'den 9'a kadar tüm sayýlardan birer tane olur.
+
+	Eðer bulmacanýn 1 tane çözüm kümesi varsa bulmaca çözülür, 1'den fazla çözüm kümesi varsa bulmaca dolmaz, hiç çözüm kümesi yoksa bulmaca yanlýþ sayýlarla dolar. 1'den fazla çözüm kümesine deneme yanýlma yöntemi uygulanarak ulaþýlabilir.
+
+	Ctrl+Shift+Alt+Tab tuþlarýna ayný anda basýlýrsa yardýmcý panel ekranda görünür hale gelecektir. Bu arayüz iyi tasarlanmadýðý için gizlenmiþtir.
+
+	Pencere üzerine sað týklandýðýnda gelen menü seçenekleri aþaðýdadýr.
+
+	Deðer Ver		: O anda üzerinde bulunan hücreye sayý girmeye yarar (Ctrl+Enter).
+        Veri giriþi rakamlara basýldýðý zaman form baþlýðýna yazýlarak, daha sonra Enter tuþuna basarak, üzerinde bulunan hücreye bu baþlýktan yazýlýr. Baþlýk deðeri boþ ise deðer giriþi penceresi çalýþýr.
+	Girilen deðeri silmek için o hücreye 0 (sýfýr) sayýsýný girmek gerekir.
+	Geri Al			: Verilen son deðer silinerek iptal edilir (Alt+BkSp).
+	Hesaplanan Deðeri Ýptal Et	: Deneme yanýlma yöntemi veya bulmacayý çözüme uygulamalarýndan sonra ortaya çýkan deðerlerin silinmesini saðlar (Ctrl+Alt+Esc).
+
+	Deðerleri Ýncele	: Bulmacada her hücreye hangi sayýlarýn olabileceðini tablo halinde gösteren pencereyi açar (F5).
+	Olan Deðerler		: Üzerinde bulunulan hücreye hangi deðerlerin girilebileceðini gösteren mesaj kutusunu açar (F6).
+	Kontrol Et		: Bulmacanýn boþ mu, dolu mu, dolu ise yanlýþ mý doðru mu olduðunu bildirir (Ctrl+K).
+	Seviye -> (Her seviye artýþý önceki seviyeleri de devreye sokar.)
+		Etkisiz	: Sadece hücre gruplarýna girilen deðerler sonucunda kalaný verir. Hesaplama yapmaz (Ctrl+E). Deneme yanýlma yöntemi kullanýldýðýnda ekrandaki kýpýrdanmalar güzel oluyor.
+		Zayýf		: Bir grup içinde bir sayý sadece bir hücre kümesinde varsa, diðerlerinde yoksa onlarýda araþtýrýr (Ctrl+Z).
+		Orta		: Bir grup içinde belli hücrelere sýkýþmýþ sayýlarý diðer hücrelerden çýkarmak için bu seviye de devreye girmelidir (Ctrl+T).
+		Güçlü		: Ýki grup arasýnda mesela bir kare ve o karenin ortasýndan geçen satýr gruplarýnda kare içinde sadece ayný satýrda olabilen bir deðer varsa satýrda bulunan hücrelerden o kare dýþýndakilerden o sayý atýlarak gruplar arasýndaki sýnýrlamalarý da kontrol edebilmek için bu seviyede çözmek gerek (Ctrl+G).
+
+	Bulmacayý Çöz		: Bulmacayý çözmeye çalýþýr. Eðer çözme algoritmasý en üst seviyedeyse ve çözüme ulaþamazsa o zaman çözüm kümesi 1’den fazladýr (F9).
+	Deneme Yanýlma ile Çöz	: Birden fazla çözüm kümesi varsa o kümeler bu seçenek kullanýlarak elde edilir. Her çalýþtýrýldýðýnda bir sonraki küme elde edilir. Bulmaca çözülemiyor mesajý verildiðinde çözüm kümeleri bitmiþ demektir (Ctrl+F9).
+	Son Denemeyi Ýptal Et	: Deneme yanýlma iþleminde verilen son deðer silinir. Bu onu tekrar kullanabilmeyi saðlar (Ctrl+Alt+F9).
+
+	Hýzlý Çöz		: Eðer bu seçenek iþaretli ise sadece deðiþiklik yapýlan hücre gruplarý (satýr, sütun, kare) incelenir, iþaretli deðilse bütün hücre gruplarý incelenir (Ctrl+Alt+H).
+	Otomatik Çöz		: Bulmacaya her deðer girildiðinde bulmaca 1. (Zayýf) seviden çözülmeye çalýþýlýr (Ctrl+Alt+O).
+
+	Yeni Bulmaca Oluþtur	: Verilen tüm deðerler silinerek boþ yeni bir bulmaca oluþturulur (Ctrl+N).
+	Aç			: Daha önceden oluþturulmuþ ve dosya olarak kayýt edilmiþ bulmacayý yükler (Ctrl+O).
+	Tekrar Yükle		: Üzerinde çalýþýlan bulmaca dosyasýný kayýt edilmiþ son haliyle yükler (F3).
+	Kaydet			: Üzerinde çalýþýlan bulmaca dosyasýnýn son halini kayýt eder (Ctrl+S veya F2).
+	Farklý Kaydet		: Bulmacanýn son durumunu baþka bir dosya oluþturarak kayýt eder (F12).
+
+	Bulmaca Oluþtur		: Rarsgele deðerler girerek bulmaca oluþturur(1) (Ctrl+B).
+	Gereksiz Deðerleri Sil	: Bir bulmacada verilen deðerlerden hangileri gereksiz ise onlarý bulmacadan siler (Ctrl+Alt+G).
+
+	Yardým			: Programýn nasýl çalýþtýðýný anlatýr (F1).
+	Hakkýnda		: Program hakkýnda bilgi verir (Ctrl+H).
+
+	Kapat			: Programý kapatýr (Esc).
+
+	Programýn standart kullaným þekli, sayýlar girildikten sonra F9 tuþuna basarak çözüme ulaþýlmaya çalýþýlýr. Deðeri dýþarýdan girilen sayýlar renkli (mavi), hesaplanarak bulunan sayýlar ise siyah yazýlýr. 
+
+	(1):Bir bulmaca sorusu oluþturmak için önce varsa deðerlerin silinmesi için "Yeni Bulmaca Oluþtur" seçeneði kullanýlýr. Eðer bulmaca boþsa hiç deðer girilmedi ise veya özel olarak elle verilmiþ deðerler silinmesin isteniyorsa bu seçenek kullanýlmamalýdýr. Daha sonra "Bulmaca Oluþtur" seçeneði ile rasgele deðerler oluþturulur. Eðer bir hatalý deðer üretimi oluþursa iþlem baþarýlý olana kadar bu seçenek kullanýlmalýdýr. En son olarak ta "Gereksiz Deðerleri Sil" seçeneði kullanýlarak bu sayýlar arasýndan gerekmeyenler silinir. Bütün bu iþlemlerden sonra geride kalan sayýlardan çözüm sadece 1 tane olur. Yani Ekranda bir bulmaca durmaktadýr.
